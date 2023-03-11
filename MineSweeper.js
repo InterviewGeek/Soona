@@ -45,7 +45,7 @@ function parse (input) {
             if(count > 0) {
               let currentStr = input[i];
               let subStr = currentStr.substring(0, j);
-              let newStr = currentStr.substring(0, j) + count + currentStr.substring(j+1); // what is the req if the mines turn out to be >9?
+              let newStr = currentStr.substring(0, j) + count + currentStr.substring(j+1); // max value will be 8, so we will not oveflow the string
               input[i] = newStr;
             }
           }
