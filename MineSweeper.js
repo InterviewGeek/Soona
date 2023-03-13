@@ -19,9 +19,9 @@ And your code will transform it into this:
 */
 
 let input = ['***', '* *', '***'];
-parse(input);
+countWords(input);
 
-function parse (input) {
+function countWords (input) {
     for (let i = 0; i < input.length; i++) {
         for (let j = 0; j < input[0].length; j++) {
           if(input[i][j] != '*') {
