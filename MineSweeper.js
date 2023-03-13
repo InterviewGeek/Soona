@@ -19,9 +19,9 @@ And your code will transform it into this:
 */
 
 let input = ['***', '* *', '***'];
-countWords(input);
+annotate(input);
 
-function countWords (input) {
+function annotate (input) {
     for (let i = 0; i < input.length; i++) {
         for (let j = 0; j < input[0].length; j++) {
           if(input[i][j] != '*') {
