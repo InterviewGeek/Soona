@@ -29,9 +29,9 @@ fled: 1
 */
 
 let input = "\"That's the password: 'PASSWORD 123'!\", cried the Special Agent.\tSo I fled. Agent"
-wordCount(input);
+countWords(input);
 
-function wordCount(phrase) {
+function countWords(phrase) {
 
     // replace new-line and tab with space
     phrase = phrase.replace(/\n/, " ");
